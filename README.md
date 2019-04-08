@@ -9,21 +9,21 @@
 <p>Para adicionar o feed dentro de uma Página CMS, usar:</p>
 <p>{{block type="instagramfeed/instagramfeed" name="instagramfeed" alias="insta_block_new" template="codebaby/instafeed.phtml"}}</p>
 <p>Para adicionar o feed dentro de uma arquivo .phtml, usar:</p>
-<p><?php echo $this->getLayout()->createBlock('instagramfeed/instagramfeed')->setTemplate('codebaby/instafeed.phtml')->toHtml(); ?></p>
+<p>\<\?\php echo $this->getLayout()->createBlock('instagramfeed/instagramfeed')->setTemplate('codebaby/instafeed.phtml')->toHtml(); ?></p>
 <br>
 <br>
 <h3>Configurações:</h3>
 <p><img src="https://codebaby.tech/readmefiles/instafeedextension/1-instafeed_instructions-conf.jpg" /></p>
-<p>Instagram Acess Token: Seu token de acesso do instagram. Dúvidas para tirar o token? <a href="#tokeninsta">Clique aqui</a></p>
-<p>Qtde de Itens a mostrar: Quantos itens vão aparecer dentro do bloco (máx 20)</p>
-<p>Título da Seção: Título que vai aparecer acima do bloco</p>
-<p>Tamanho da miniatura: tamanhos padrão do instagram (standard_resolution/low_resolution/thumbnail)</p>
+<p><strong>Instagram Acess Token:</strong> Seu token de acesso do instagram. Dúvidas para tirar o token? <a href="#tokeninsta">Clique aqui</a></p>
+<p><strong>Qtde de Itens a mostrar:</strong> Quantos itens vão aparecer dentro do bloco (máx 20)</p>
+<p><strong>Título da Seção:</strong> Título que vai aparecer acima do bloco</p>
+<p><strong>Tamanho da miniatura:</strong> tamanhos padrão do instagram (standard_resolution/low_resolution/thumbnail)</p>
 <p>Se você deixar os campos abaixo vazios, serão carregadas as classes e css padrão do módulo. Se preferir usar classes próprias, como do bootstrap, por exemplo, basta preencher os campos abaixo com as classes desejadas.</p>
-<p>Classe da div do Título: A classe da div que envolve o título.</p>
-<p>Classe do Título Html: A classe do elemento h2 do tíitulo.</p>
-<p>Classe dos itens no Html: A classe para cada imagem individual do instagram.</p>
-<p>Wrapper Html class: A classe da div que envolve o bloco inteiro, inclusive a div do título.</p>
-<p>Itens Wrapper Html class: A classe que envolve os itens, ou seja o grupo de miniaturas de imagens do Instagram.</p>
+<p><strong>Classe da div do Título:</strong> A classe da div que envolve o título.</p>
+<p><strong>Classe do Título Html:</strong> A classe do elemento h2 do tíitulo.</p>
+<p><strong>Classe dos itens no Html:</strong> A classe para cada imagem individual do instagram.</p>
+<p><strong>Wrapper Html class:</strong> A classe da div que envolve o bloco inteiro, inclusive a div do título.</p>
+<p><strong>Itens Wrapper Html class:</strong> A classe que envolve os itens, ou seja o grupo de miniaturas de imagens do Instagram.</p>
 <br>
 <br>
 <h3 id="tokeninsta">Conseguindo o token do Instagram:</h3>
