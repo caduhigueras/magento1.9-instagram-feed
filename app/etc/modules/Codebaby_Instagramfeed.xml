@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Codebaby_Instagramfeed>
+           <active>true</active>
+              <codePool>community</codePool>
+       </Codebaby_Instagramfeed>
+    </modules>
+</config>

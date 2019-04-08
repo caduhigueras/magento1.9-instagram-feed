@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Codebaby_Instagramfeed>
+			<version>1.0.0</version>
+		</Codebaby_Instagramfeed>
+	</modules>
+	<!-- define models and helpers -->
+	<global>
+		<models>
+			<instagramfeed>
+				<class>Codebaby_Instagramfeed_Model</class>
+			</instagramfeed>
+		</models>
+		<helpers>
+			<instagramfeed>
+				<class>Codebaby_Instagramfeed_Helper</class>
+			</instagramfeed>
+		</helpers>
+		<blocks>
+	      <instagramfeed>
+	        <class>Codebaby_Instagramfeed_Block</class>
+	      </instagramfeed>
+	    </blocks>
+	</global>
+	<frontend>
+    	<routers>
+			<instagramfeed>
+				<use>standard</use>
+				<args>
+				    <module>Codebaby_Instagramfeed</module>
+				    <frontName>instagramfeed</frontName>
+				</args>
+			</instagramfeed>
+		</routers>
+		<layout>
+	  		<updates>
+	  			<codebaby_instagramfeed>
+	  				<file>codebaby_instagramfeed/instagramfeed.xml</file>
+	  			</codebaby_instagramfeed>
+	  		</updates>
+	  	</layout>
+	</frontend>
+	<!-- in order to avoid "404 and Permission Denied -->
+	<adminhtml>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<codebabyintagramfeed>
+											<title>GrowInBox - All</title>
+										</codebabyintagramfeed>
+										<instagram_block_tab>
+											<title>Geral - All</title>
+										</instagram_block_tab>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>
+</config>

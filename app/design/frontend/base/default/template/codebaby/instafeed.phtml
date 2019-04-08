@@ -1,0 +1,41 @@
+<?php $arrayPostsInsta = $this->getInstaRequest(); ?>
+<?php if($this->getInstaWrapperClass()): ?>
+	<div class="<?php echo $this->getInstaWrapperClass(); ?>">
+<?php else: ?>
+	<div class="codebaby_insta_wrapper">
+<?php endif; ?>
+<!--  -->
+<?php if($this->getInstaTitle()): ?> 
+	<?php if($this->getInstaTitleWrapper()): ?>
+	<div class="<?php echo $this->getInstaTitleWrapper(); ?>">
+	<?php else: ?>
+	<div class="codebaby_insta_title_wrapper">
+	<?php endif; ?>
+		<h2 class="<?php echo $this->getInstaTitleClass(); ?>"><?php echo $this->getInstaTitle(); ?></h2>
+	</div>
+<?php endif; ?>
+<?php if($this->getInstaItensWrapperClass()): ?>
+	<div class="<?php echo $this->getInstaItensWrapperClass(); ?>">
+<?php else: ?>
+	<div class="codebaby_insta_itens_wrapper">
+<?php endif; ?>
+<?php  
+	foreach ( $arrayPostsInsta as $post ) { ?>
+		<?php if($this->getInstaItemClass()): ?>
+			<div class="<?php echo $this->getInstaItemClass(); ?>">
+		<?php endif; ?>
+		<?php if($this->getTamanhoPost() == 'thumbnail'):
+			echo '<a href="'.$post->link.'" target="_blank"><img src="'.$post->images->thumbnail->url.'" /></a>';
+		elseif($this->getTamanhoPost() == 'standard_resolution'):
+			echo '<a href="'.$post->link.'" target="_blank"><img src="'.$post->images->standard_resolution->url.'" /></a>';
+		elseif($this->getTamanhoPost() == 'low_resolution'):
+			echo '<a href="'.$post->link.'" target="_blank"><img src="'.$post->images->low_resolution->url.'" /></a>';
+		else:
+			echo '<a href="'.$post->link.'" target="_blank"><img src="'.$post->images->thumbnail->url.'" /></a>';
+		endif; ?>
+		<?php if($this->getInstaItemClass()): ?>
+			</div>
+		<?php endif; ?>
+	<?php } ?>
+	</div><?php //codebaby_insta_itens_wrapper ?>
+</div><?php //codebaby_insta_wrapper ?>

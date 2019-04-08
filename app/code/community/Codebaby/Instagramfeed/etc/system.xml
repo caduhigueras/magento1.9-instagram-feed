@@ -1,0 +1,112 @@
+<config>
+	<tabs>
+		<codebabyintagramfeed translate="label">
+			<label>Instagram Feed</label>
+			<sort_order>001</sort_order>
+		</codebabyintagramfeed>
+	</tabs>
+	<sections>
+		<instagram_block_tab translate="label">
+			<label>Block Instagram</label>
+			<tab>codebabyintagramfeed</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>11000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<instagramconfiggroup translate="label" module="instagramfeed">
+					<label>Instagram Block</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>01</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<instagramtoken translate="label">
+							<label>Instagram Access Token: </label>
+							<comment>Access token da API do Instagram</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instagramtoken>
+						<instagrampagecount translate="label">
+							<label>Qtde de itens a mostrar: </label>
+							<!-- <comment>Id da página da qual vamos puxar os posts</comment> -->
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instagrampagecount>
+						<tituloinstasection translate="label">
+							<label>Título da Seção: </label>
+							<comment>Preencher apenas caso queira mostrar um título antes do bloco</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</tituloinstasection>
+						<tamanhopost translate="label">
+							<label>Tamanho da miniatura: </label>
+							<comment>Opções: standard_resolution ( will return 612x612 images) / low_resolution (will return 306x306 images) / thumbnail (will return 150x150 images)</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</tamanhopost>
+						<instatitlewrapper translate="label">
+							<label>Classe da div do Título:</label>
+							<comment>opcional - classe da div que envolve o titulo</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instatitlewrapper>
+						<instatitleclass translate="label">
+							<label>Classe do Título Html:</label>
+							<comment>opcional - classe da tag h2 de titulo</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instatitleclass>
+						<instaitemclass translate="label">
+							<label>Classe dos itens no Html:</label>
+							<comment>opcional - classe de cada item individual</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instaitemclass>
+						<instahtmlwrapper translate="label">
+							<label>Wrapper Html class:</label>
+							<comment>opcional - classe em volta de todo o bloco</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instahtmlwrapper>
+						<instaitenswrapperclass translate="label">
+							<label>Itens Wrapper Html class:</label>
+							<comment>opcional - classe da div em volta dos itens</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</instaitenswrapperclass>
+					</fields>
+				</instagramconfiggroup>
+			</groups>
+		</instagram_block_tab>
+	</sections>
+</config>

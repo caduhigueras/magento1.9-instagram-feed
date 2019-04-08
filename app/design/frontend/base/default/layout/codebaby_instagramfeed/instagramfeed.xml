@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<layout>
+	<default translate="label" module="page">
+		<reference name="head">
+			<action method="addItem">
+				<type>skin_css</type>
+				<stylesheet>css/codebaby_instafeed.css</stylesheet>
+			</action>
+		</reference>
+	</default>
+</layout>
