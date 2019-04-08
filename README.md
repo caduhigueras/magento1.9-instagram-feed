@@ -9,7 +9,7 @@
 <p>Para adicionar o feed dentro de uma Página CMS, usar:</p>
 <p>{{block type="instagramfeed/instagramfeed" name="instagramfeed" alias="insta_block_new" template="codebaby/instafeed.phtml"}}</p>
 <p>Para adicionar o feed dentro de uma arquivo .phtml, usar:</p>
-<p>\<\?\php echo $this->getLayout()->createBlock('instagramfeed/instagramfeed')->setTemplate('codebaby/instafeed.phtml')->toHtml(); ?></p>
+<p><?php echo $this->getLayout()->createBlock('instagramfeed/instagramfeed')->setTemplate('codebaby/instafeed.phtml')->toHtml(); ?></p>
 <br>
 <br>
 <h3>Configurações:</h3>
